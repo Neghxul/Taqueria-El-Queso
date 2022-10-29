@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taqueria "El Queso"</title>
+        <link rel="stylesheet" href="style_tacos.css">
+    </head>
+    <body>
+
+        <div class="div-main">
+
+            <header>
+
+                <div class="header">
+
+                    <div class="div-logo"><img class="logo" src="./Taqueria.png" alt="Ques'eso"></div>
+                    <div class="div-title">
+                        <h1>Taqueria "El Queso"</h1>
+                        <h2>¡Ques'eso!</h2>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="#menu"><div class="menu">Menu</div></a>
+                    <a href="#location"><div class="menu">Ubicaciones</div></a>
+                    <a href="#pedidos"><div class="menu">Pedidos</div></a>
+                    <a href="#about"><div class="menu">About</div></a>
+                </nav>
+
+
+            </header>
+
+            <article>
+                <section id="menu">
+                    <h2>Menu</h2>
+                    <h3>Tacos Grandes</h3>
+                    <p>Todos incluyen nopales y cebollas</p>
+                    <ul>
+                        <li>Bistek ............... $30.00</li>
+                        <li>Chorizo .............. $30.00</li>
+                        <li>Chuleta .............. $30.00</li>
+                        <li>Pastor ............... $30.00</li>
+                        <li>Campechanos .......... $30.00</li>
+                    </ul>
+
+                    <h3>Tacos Pequeños</h3>
+                    <p>Con cilantro y cebolla</p>
+                    <ul>
+                        <li>Bistek ............... $15.00</li>
+                        <li>Chorizo .............. $15.00</li>
+                        <li>Chuleta .............. $15.00</li>
+                        <li>Pastor ............... $15.00</li>
+                        <li>Campechanos .......... $15.00</li>
+                    </ul>
+
+                    <h3>Especiales</h3>
+                    <p>Haz tu combo con refresco por $10.00 mas</p>
+                    <dl>
+                        <dt>El Quesabroso ............. $40.00</dt>
+                        <dd>Tortilla de maiz con pastor, queso y piña</dd>
+                        <dt>El Quesobabas  ............. $40.00</dt>
+                        <dd>Tortilla de maiz con chorizo, chuleta y queso</dd>
+                        <dt>El Quesobadon ............. $40.00</dt>
+                        <dd>Tortilla de maiz con doble chorizo y costra de queso</dd>
+                        <dt>El Quesabritas ............. $40.00</dt>
+                        <dd>Tortilla de maiz con Bistek, queso y chuleta</dd>
+                    </dl>
+                </section>
+
+                <section id="location">
+                    <h2>Ubicación</h2>
+                    <h3>Sucursales</h3>
+                    <table>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Ubicación</th>
+                            <th>Horarios</th>
+                        </tr>
+                        <tr>
+                            <td>Centro</td>
+                            <td><a href="https://goo.gl/maps/so86M3bREmXcwnG98" target="_blank">Calle 16 de Septiembre 8-24, Centro, 76000 Santiago de Querétaro, Qro.</a></td>
+                            <td>L - D 24H</td>
+                        </tr>
+                        <tr>
+                            <td>Juriquilla</td>
+                            <td><a href="https://goo.gl/maps/rqTTeJdyZjVXm8jd6" target="_blank">Carretera Querétaro, San Luis Potosí - Santiago de Querétaro 12401, Félix Osores Sotomayor, 76127 El Salitre, Qro.</a></td>
+                            <td>L - D 5pm - 3am</td>
+                        </tr>
+                        <tr>
+                            <td>Centro Sur</td>
+                            <td><a href="https://goo.gl/maps/MGPPihLE9tfAXcv98" target="_blank">Blvd. Bernardo Quintana 7001, Centro Sur, 76090 Santiago de Querétaro, Qro.</a></td>
+                            <td>M - D 5pm - 3am</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section id="pedidos">
+                    <h2>Pedidos</h2>
+                    <h3>Haz tu pedido aqui</h3>
+                    <form>
+                        <p>¿De que taqueria quieres tu pedido?</p>
+                        <select>
+                            <option value="centro">Centro</option>
+                            <option value="juriquilla">Juriquilla</option>
+                            <option value="centro">Centro Sur</option>
+                        </select>
+
+                        <p>¿De que quieres tus tacos?</p>
+                        <input type="checkbox" id="bistek" name="bistek" value="bistek">
+                        <label for="bistek">Bistek</label>
+                        <input type="number" placeholder="¿Cuantos?" name="bistekN" id="bistekN">
+                        
+                        <input type="checkbox" id="chorizo" name="chorizo" value="chorizo">
+                        <label for="chorizo">Chorizo</label>
+                        <input type="number" placeholder="¿Cuantos?" name="chorizoN" id="chorizoN">
+
+                        <input type="checkbox" id="chuleta" name="chuleta" value="chuleta">
+                        <label for="chuleta">Chuleta</label>
+                        <input type="number" placeholder="¿Cuantos?" name="chuletaN" id="chuletaN">
+
+                        <input type="checkbox" id="pastor" name="pastor" value="pastor">
+                        <label for="pastor">Pastor</label>
+                        <input type="number" placeholder="¿Cuantos?" name="pastorkN" id="pastorN">
+
+                        <input type="checkbox" id="campechanos" name="campechanos" value="campechanos">
+                        <label for="campechanos">Campechanos</label>
+                        <input type="number" placeholder="¿Cuantos?" name="campechanosN" id="campechanosN">
+
+
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre">
+
+                        <label for="tel">Telefono: </label>
+                        <input type="tel" name="tel" id="tel">
+                        
+                        <label for="email">E-Mail: </label>
+                        <input type="email" nombre="email" id="email">
+                        
+                        <label for="fecha">Fecha y hora: </label>
+                        <input type="datetime">
+                        
+                        <label for="direccion">Direccion: </label>
+                        <input type="text" name="direccion" id="direccion">
+                        
+                        <input type="submit" value="Enviar pedido">
+                    </form>
+                </section>
+
+            </article>
+
+        </div>
+
+    </body>
+</html>
