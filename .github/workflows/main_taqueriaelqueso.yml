@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'taqueriaelqueso'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2810D8340E184311B6AE03CF761D33CA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_107CDE7716444D90B4DE043E7646FBDC }}
           package: .
