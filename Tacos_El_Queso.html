@@ -35,7 +35,7 @@
             <article class="main-section">
                 <h2>Menu</h2>
                 <section id="menu-grid">
-                    <div class="menu-option">
+                    <div class="menu-option" id="draggableDiv" draggable="true">
                         <h3>Tacos Grandes</h3>
                         <p>Todos incluyen nopales y cebollas</p>
                         <ul>
@@ -46,6 +46,20 @@
                             <li>Campechanos<hr /><span>$30.00</span></li>
                         </ul>
                     </div>
+
+                    <script
+                    >var draggableDiv = document.getElementById("draggableDiv");
+
+draggableDiv.addEventListener("dragstart", function(event) {
+  // Set the data to be transferred
+  event.dataTransfer.setData("text/plain", event.target.id);
+});
+
+draggableDiv.addEventListener("drag", function(event) {
+  // Update the position of the element being dragged
+  event.target.style.left = event.pageX + "px";
+  event.target.style.top = event.pageY + "px";
+});</script>
 
                     <div class="menu-option">
                         <h3>Tacos Pequeños</h3>
